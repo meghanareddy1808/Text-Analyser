@@ -25,4 +25,4 @@ The model is deployed using streamlit library on streamlit share.
 
 ## Link for the Application
 
-: https://meghanareddy1808-text-analyser-app-f145mw.streamlit.app/
+https://meghanareddy1808-text-analyser-app-f145mw.streamlit.app/
