@@ -10,7 +10,7 @@ from nltk.stem.porter import PorterStemmer
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 ps=PorterStemmer()
-
+nltk.download('punkt')
 nltk.download('stopwords')
 sw=nltk.corpus.stopwords.words('english')
 
