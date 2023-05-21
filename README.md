@@ -26,3 +26,20 @@ The model is deployed using streamlit library on streamlit share.
 ## Link for the Application
 
 https://meghanareddy1808-text-analyser-app-f145mw.streamlit.app/
+
+## Sneak-Peek into the Application:
+
+**Home page**
+
+![home](https://github.com/meghanareddy1808/Text-Analyser/assets/108571707/ab314bc5-600a-4e79-8d6c-4c3d38193071)
+
+**Sentiment Analysis**
+
+![sentiment](https://github.com/meghanareddy1808/Text-Analyser/assets/108571707/72196d8d-0922-436d-ae15-b927884d790f)
+**Spam Detection**
+
+![spam](https://github.com/meghanareddy1808/Text-Analyser/assets/108571707/8450b96b-7e83-48d4-ae64-16653bd458b7)
+**Sarcasm Detection**
+
+![sarcasm](https://github.com/meghanareddy1808/Text-Analyser/assets/108571707/55f562d2-59a4-4e75-949a-0b2d61052456)
+
