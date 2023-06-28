@@ -1,30 +1,28 @@
 import streamlit as st
-import numpy as np
 import pandas as pd
-import re
 import nltk
 from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize
 from sklearn.feature_extraction.text import TfidfVectorizer
 from nltk.stem.porter import PorterStemmer
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 ps=PorterStemmer()
-nltk.download('punkt')
+
 nltk.download('stopwords')
+nltk.download('punkt')
 sw=nltk.corpus.stopwords.words('english')
 
 
 
-rad=st.sidebar.radio("Navigation",["Home","Sentiment Analysis","Spam Detection","Sarcasm Detection"])
+rad=st.sidebar.radio("Navigation",["Home","Hate and Offensive Language Detection","Spam Detection","Sarcasm Detection"])
 
 #Home Page
 if rad=="Home":
     st.title("Text Analysis App")
     st.image("4.jpeg")
     st.text(" ")
-    st.text("The following text analysiers are available:")
-    st.text("1. Sentiment Analysis")
+    st.text("The following text analysers are available:")
+    st.text("1. Hate Speech and Offensive Language Detector")
     st.text("2. Spam Detector")
     st.text("3. Sarcasm Detector")
 
@@ -48,17 +46,17 @@ tfidf=TfidfVectorizer(stop_words=sw,max_features=20)
 def transform(txt):
     textnew=tfidf.fit_transform(txt)
     return textnew.toarray()
-df=pd.read_csv("./Sentiment Analysis.csv")
-df.columns=["Text","Label"]
+df=pd.read_csv("./hate_content.csv")
+df.columns=["Label","Text"]
 x=transform(df["Text"])
 y=df["Label"]
 x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.3,random_state=2)
 model=LogisticRegression()
 model.fit(x_train,y_train)
 
-if rad=="Sentiment Analysis":
-    st.title("Get sentiment of the text")
-    st.image("1.png",width=300)
+if rad=="Hate and Offensive Language Detection":
+    st.title("Detect the hate content of the text")
+    st.image("1.jpg",width=300)
     txt=st.text_area("Enter the text")
     transformed_txt=transform_text(txt)
     #tfidf
@@ -67,9 +65,11 @@ if rad=="Sentiment Analysis":
 
     if st.button("Predict"):
         if prediction==0:
-            st.warning("Negative Text:(")
+            st.warning("Hate speech detected 😡")
         elif prediction==1:
-            st.success("Positive Text:)")
+            st.success("Offensive language detected 🤐")
+        elif prediction==2:
+            st.success("Normal language detected 😁")
 
 #spam detection
 tfidf=TfidfVectorizer(stop_words=sw,max_features=20)
