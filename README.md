@@ -31,15 +31,17 @@ https://meghanareddy1808-text-analyser-app-f145mw.streamlit.app/
 
 **Home page**
 
-![home](https://github.com/meghanareddy1808/Text-Analyser/assets/108571707/ab314bc5-600a-4e79-8d6c-4c3d38193071)
+![Screenshot (100)](https://github.com/meghanareddy1808/Text-Analyser/assets/108571707/62e09300-55a9-4843-8ef6-d39c75204ccc)
 
-**Sentiment Analysis**
+**Hate Content and Offensive Language Detection**
 
-![sentiment](https://github.com/meghanareddy1808/Text-Analyser/assets/108571707/72196d8d-0922-436d-ae15-b927884d790f)
+![Screenshot (102)](https://github.com/meghanareddy1808/Text-Analyser/assets/108571707/9ed84a36-38fc-463c-a55b-ef3963a9f156)
+
 **Spam Detection**
 
-![spam](https://github.com/meghanareddy1808/Text-Analyser/assets/108571707/8450b96b-7e83-48d4-ae64-16653bd458b7)
+![Screenshot (104)](https://github.com/meghanareddy1808/Text-Analyser/assets/108571707/acefa36d-ce11-4043-aba0-f3e1ff0d6cb2)
+
 **Sarcasm Detection**
 
-![sarcasm](https://github.com/meghanareddy1808/Text-Analyser/assets/108571707/55f562d2-59a4-4e75-949a-0b2d61052456)
+![Screenshot (105)](https://github.com/meghanareddy1808/Text-Analyser/assets/108571707/31321850-daed-44ce-b7ca-c12e2f6555ab)
 
